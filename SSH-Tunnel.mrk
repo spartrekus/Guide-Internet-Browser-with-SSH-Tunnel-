@@ -1,0 +1,59 @@
+
+/////// THIS IS AN UNIMARK DOCUMENT !!!!
+
+!include{unimark.mrk}
+!begin
+
+\begin{Large}
+\begin{center}
+{\bfseries Internet Browser with Tunnel and SSH }
+\end{center}
+\end{Large}
+
+
+= Introduction 
+This method will help you to setup a SSH tunnel for your internet browser.
+
+Imagine that you would like to are using internet 
+on an hotspot, and that this internet connection is not perfectly secured.
+You may make use of a distant SSH server to act as if you would be
+surfing on this distant machine. 
+
+
+= Tunnel with SSH and Iceweawel 
+!subsection Establish the SSH connection    
+The distant machine has an SSH service. 
+The local machine has an internet browser, which is installed.
+The example will be given with Icewesel (Firefox).
+
+First you need to establish the connect to your distant machine.  \\
+
+{\bfseries Code:\\}
+{\bfseries ssh -p22 -D  9999 -C  username@100.100.100.100 \\}
+
+This will forward the port 8080 to 9999 over SSH for your local browser.
+
+The port 22 is your SSH service port.
+The port 9999 is the port which will be used as tunnel. You will use this 
+port on your local machine (in the internet browser).
+
+!subsection Setup the internet browser
+In the browser, you add the information SOCKS v.5 and the port 9999 to 
+tell the Iceweasel to use the localhost with the tunnel (on port 9999).
+
+!fig{web.png}
+
+= Check the IP adress
+The internet browser is now running with the tunnel. 
+You may then check your IP with website such as DYNDNS checkip or others.
+Alternative is www.whatismyip.com. 
+
+= Conclusion
+You may have successfully established an SSH tunnel and 
+you can have higher security for browser. 
+However, keep in mind that internet is never secured 100 pct.
+Good Luck!
+
+!end
+
+
