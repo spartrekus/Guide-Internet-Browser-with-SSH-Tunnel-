@@ -24,7 +24,8 @@ surfing on this distant machine.
 !subsection Establish the SSH connection    
 The distant machine has an SSH service. 
 The local machine has an internet browser, which is installed.
-The example will be given with Icewesel (Firefox).
+The example will be given with Iceweasel (Firefox) on Linux 
+(e.g. Devuan, Fedora,...).
 
 First you need to establish the connect to your distant machine.  \\
 
