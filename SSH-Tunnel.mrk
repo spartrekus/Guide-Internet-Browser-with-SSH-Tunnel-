@@ -14,8 +14,8 @@
 = Introduction 
 This method will help you to setup a SSH tunnel for your internet browser.
 
-Imagine that you would like to are using internet 
-on an hotspot, and that this internet connection is not perfectly secured.
+Imagine that you would like to surf on  internet using a connection which is e.g.
+an hotspot, and that this internet connection is not perfectly secured.
 You may make use of a distant SSH server to act as if you would be
 surfing on this distant machine. 
 
